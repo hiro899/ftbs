@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nextjsimguploader-dev-191349-authRole",
+      "UnauthRoleArn": "arn:aws:iam::255158664260:role/amplify-nextjsimguploader-dev-191349-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::255158664260:role/amplify-nextjsimguploader-dev-191349-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-nextjsimguploader-dev-191349-deployment",
+      "UnauthRoleName": "amplify-nextjsimguploader-dev-191349-unauthRole",
+      "StackName": "amplify-nextjsimguploader-dev-191349",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:255158664260:stack/amplify-nextjsimguploader-dev-191349/f7e4ac70-1cae-11ee-9435-0ab993b4ea61",
+      "AmplifyAppId": "dhlysd79mzx7z"
+    },
+    "categories": {
+      "auth": {
+        "nextjsimguploaderbd407a74": {}
+      }
+    }
+  }
+}
