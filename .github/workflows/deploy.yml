@@ -1,4 +1,4 @@
-name: Manually deploy nextjs_img_uploader
+name: Manually deploy ftbs
 on: workflow_dispatch
 
 jobs:
