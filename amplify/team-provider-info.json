@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-nextjsimguploader-dev-191349-authRole",
-      "UnauthRoleArn": "arn:aws:iam::255158664260:role/amplify-nextjsimguploader-dev-191349-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::255158664260:role/amplify-nextjsimguploader-dev-191349-authRole",
+      "AuthRoleName": "amplify-ftbs-dev-23702-authRole",
+      "UnauthRoleArn": "arn:aws:iam::255158664260:role/amplify-ftbs-dev-23702-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::255158664260:role/amplify-ftbs-dev-23702-authRole",
       "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-nextjsimguploader-dev-191349-deployment",
-      "UnauthRoleName": "amplify-nextjsimguploader-dev-191349-unauthRole",
-      "StackName": "amplify-nextjsimguploader-dev-191349",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:255158664260:stack/amplify-nextjsimguploader-dev-191349/f7e4ac70-1cae-11ee-9435-0ab993b4ea61",
-      "AmplifyAppId": "dhlysd79mzx7z"
+      "DeploymentBucketName": "amplify-ftbs-dev-23702-deployment",
+      "UnauthRoleName": "amplify-ftbs-dev-23702-unauthRole",
+      "StackName": "amplify-ftbs-dev-23702",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:255158664260:stack/amplify-ftbs-dev-23702/70b6fbb0-74ef-11ee-b035-06531b843051",
+      "AmplifyAppId": "d1uby9lzliqarj"
     },
     "categories": {
       "auth": {
-        "nextjsimguploaderbd407a74": {}
+        "ftbs478b5a35478b5a35": {}
       }
     }
   }

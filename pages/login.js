@@ -20,11 +20,11 @@ function LoginPage() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl mb-10">Login</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2" style={{backgroundColor: '#f0ecec'}}>
+      <h1 className="text-4xl mb-10" style={{color: '#775541'}}>FTBS</h1>
       <form className="w-64 space-y-4" onSubmit={handleSignIn}>
-        <label className="flex flex-col">
-          メール
+        <label className="flex flex-col" style={{color: '#775541'}}>
+          MAIL ADDRESS
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             name="email"
@@ -33,8 +33,8 @@ function LoginPage() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <label className="flex flex-col">
-          パスワード
+        <label className="flex flex-col" style={{color: '#775541'}}>
+          PASSWORD
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             type="password"
@@ -44,7 +44,7 @@ function LoginPage() {
           />
         </label>
         <button 
-          className="w-full px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition-colors duration-200" 
+          className="w-full px-3 py-2 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
           type="submit"
         >
           login
@@ -52,10 +52,10 @@ function LoginPage() {
       </form>
       <div className="flex flex-col space-y-4 mt-4">
         <Link href="/signup">
-          <a className="text-blue-500 hover:text-blue-400 transition-colors duration-200">新しくアカウントを作成</a>
+        <a className="transition-colors duration-200" style={{color: '#775541', hover: {color: '#89665c'}}}>新しくアカウントを作成</a>
         </Link>
         <Link href="/forgotPassword">
-          <a className="text-blue-500 hover:text-blue-400 transition-colors duration-200">パスワードを忘れた方</a>
+        <a className="transition-colors duration-200" style={{color: '#775541', hover: {color: '#89665c'}}}>パスワードをお忘れの方</a>
         </Link>
       </div>
     </div>
