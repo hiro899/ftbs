@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function ResetPassword() {
+  const [email, setEmail] = useState('');
   const [code, setCode] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -34,53 +35,63 @@ export default function ResetPassword() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl mb-10">パスワードを更新</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2" style={{backgroundColor: '#f0ecec'}}>
+      <h1 className="text-4xl mb-10" style={{color: '#775541'}}>Reset Password</h1>
       <form className="w-64 space-y-4" onSubmit={handleResetPassword}>
-        <label className="flex flex-col">
-          確認コード
+        <label className="flex flex-col" style={{color: '#775541'}}>
+          Verification Code
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             name="code"
             type="text"
-            placeholder="コードを入力"
+            placeholder=""
             onChange={(e) => setCode(e.target.value)}
           />
         </label>
-        <label className="flex flex-col">
-          新パスワード（８文字以上）
+        <label className="flex flex-col" style={{color: '#775541'}}>
+        Email
+        <input
+          className="px-3 py-2 border border-gray-300 rounded"
+          name="email"
+          type="email"
+          placeholder=""
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </label>
+        <label className="flex flex-col" style={{color: '#775541'}}>
+          New Password（８文字以上）
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             name="password"
             type={showPassword ? "text" : "password"}
-            placeholder="新しいパスワードを入力"
+            placeholder=""
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
-        <label className="flex flex-col">
-          新パスワード確認
+        <label className="flex flex-col" style={{color: '#775541'}}>
+        New Password（確認）
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             name="confirmPassword"
             type={showPassword ? "text" : "password"}
-            placeholder="パスワードを再入力"
+            placeholder=""
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </label>
         <label className="flex items-center mt-2">
           <input type="checkbox" onChange={() => setShowPassword(!showPassword)} />
-          <span className="ml-2">表示</span>
+          <span className="ml-2" style={{color: '#775541'}}>表示</span>
         </label>
         <button 
-          className="w-full px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition-colors duration-200" 
+          className="w-full px-3 py-2 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
           type="submit"
         >
-          パスワードを更新
+          Reset Password
         </button>
       </form>
       <div className="flex flex-col space-y-4 mt-4">
         <Link href="/login">
-          <a className="text-blue-500 hover:text-blue-400 transition-colors duration-200">ログインページに戻る</a>
+        <a className="transition-colors duration-200" style={{color: '#775541', hover: {color: '#89665c'}}}>ログインページに戻る</a>
         </Link>
       </div>
     </div>

@@ -21,21 +21,21 @@ export default function ForgotPassword() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl mb-10">パスワードリセット</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2" style={{backgroundColor: '#f0ecec'}}>
+      <h1 className="text-4xl mb-10"  style={{color: '#775541'}}>Password Reset</h1>
       <form className="w-64 space-y-4" onSubmit={handleResetPassword}>
-        <label className="flex flex-col">
-          メールアドレス
+        <label className="flex flex-col"  style={{color: '#775541'}}>
+          Email
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             name="email"
             type="email"
-            placeholder="メールアドレスを入力"
+            placeholder=""
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
         <button 
-          className="w-full px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition-colors duration-200" 
+          className="w-full px-3 py-2 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
           type="submit"
         >
           送信
@@ -43,7 +43,7 @@ export default function ForgotPassword() {
       </form>
       <div className="flex flex-col space-y-4 mt-4">
         <Link href="/login">
-          <a className="text-blue-500 hover:text-blue-400 transition-colors duration-200">ログインに戻る</a>
+        <a className="transition-colors duration-200" style={{color: '#775541', hover: {color: '#89665c'}}}>ログインに戻る</a>
         </Link>
       </div>
     </div>

@@ -13,7 +13,7 @@ function LoginPage() {
     try {
       const user = await Auth.signIn(email, password);
       console.log(user);
-      router.push('/character'); // ログイン成功時にボット設定へリダイレクト
+      router.push('/');
     } catch (error) {
       console.log('ログインエラー', error);
     }
@@ -24,7 +24,7 @@ function LoginPage() {
       <h1 className="text-4xl mb-10" style={{color: '#775541'}}>FTBS</h1>
       <form className="w-64 space-y-4" onSubmit={handleSignIn}>
         <label className="flex flex-col" style={{color: '#775541'}}>
-          MAIL ADDRESS
+          Email
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             name="email"
@@ -34,7 +34,7 @@ function LoginPage() {
           />
         </label>
         <label className="flex flex-col" style={{color: '#775541'}}>
-          PASSWORD
+          Password
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             type="password"
@@ -47,7 +47,7 @@ function LoginPage() {
           className="w-full px-3 py-2 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
           type="submit"
         >
-          login
+          Login
         </button>
       </form>
       <div className="flex flex-col space-y-4 mt-4">

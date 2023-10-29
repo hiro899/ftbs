@@ -36,31 +36,32 @@ function VerifyCodePage() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl mb-10">確認コードの入力</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2" style={{backgroundColor: '#f0ecec'}}>
+      <h1 className="text-4xl mb-10" style={{color: '#775541'}}>Verification Code</h1>
       <form className="w-64 space-y-4" onSubmit={handleVerification}>
-        <label className="flex flex-col">
-          確認コード:
+        <label className="flex flex-col" style={{color: '#775541'}}>
           <input
             className="px-3 py-2 border border-gray-300 rounded"
             type="text"
-            placeholder="確認コードを入力"
+            placeholder=""
             onChange={(e) => setCode(e.target.value)}
           />
         </label>
         <button 
-          className="w-full px-3 py-2 bg-blue-600 text-white rounded hover:bg-blue-500 transition-colors duration-200" 
+          className="w-full px-3 py-2 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
           type="submit"
         >
-          確認
+          送信
         </button>
       </form>
-      <p
-        className="text-blue-500 cursor-pointer mt-4"
-        onClick={handleResendCode}
-      >
-        コードを再送信
-      </p>
+      <div className="flex flex-col space-y-4 mt-4">
+        <p
+          className="transition-colors duration-200" style={{color: '#775541', hover: {color: '#89665c'}}}
+          onClick={handleResendCode}
+        >
+          コードを再送信
+        </p>
+      </div>
     </div>
   );
 }
