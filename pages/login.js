@@ -21,7 +21,7 @@ function LoginPage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2" style={{backgroundColor: '#f0ecec'}}>
-      <h1 className="text-4xl mb-10" style={{color: '#775541'}}>FTBS</h1>
+      <h1 className="text-4xl mb-10" style={{color: '#775541'}}>High Brand Business</h1>
       <form className="w-64 space-y-4" onSubmit={handleSignIn}>
         <label className="flex flex-col" style={{color: '#775541'}}>
           Email

@@ -21,7 +21,7 @@ function HomePage () {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2"  style={{backgroundColor: '#f0ecec'}}>
-      <h1 className="text-4xl mb-10" style={{color: '#775541'}}>FTBS</h1>
+      <h1 className="text-4xl mb-10" style={{color: '#775541'}}>High Brand Business</h1>
       <div className="flex flex-col space-y-4">
         <Link href="https://drive.google.com/drive/folders/1h9-8zQOR9Yt3ys2h7cPOuMXCD0eFdqqw?usp=sharing">
           <a
