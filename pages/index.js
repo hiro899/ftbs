@@ -23,7 +23,7 @@ function HomePage () {
     <div className="flex flex-col items-center justify-center min-h-screen py-2"  style={{backgroundColor: '#f0ecec'}}>
       <h1 className="text-4xl mb-10" style={{color: '#775541'}}>High Brand Business</h1>
       <div className="flex flex-col space-y-4">
-        <Link href="https://drive.google.com/drive/folders/1h9-8zQOR9Yt3ys2h7cPOuMXCD0eFdqqw?usp=sharing">
+        <Link href="https://drive.google.com/drive/folders/13hbJ9t-yDKKeZczjswbpsxj1lzmHEwTB?usp=drive_link">
           <a
             className="w-64 text-center block px-10 py-3 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
           >
