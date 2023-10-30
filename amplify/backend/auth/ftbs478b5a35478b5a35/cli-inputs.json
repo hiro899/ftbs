@@ -32,41 +32,17 @@
       "email"
     ],
     "userpoolClientLambdaRole": "ftbs47478b5a35_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": true,
+    "userpoolClientSetAttributes": false,
     "sharedId": "478b5a35",
     "resourceName": "ftbs478b5a35478b5a35",
     "authSelections": "identityPoolAndUserPool",
-    "useDefault": "manual",
+    "useDefault": "default",
     "usernameAttributes": [
       "email"
     ],
-    "userPoolGroups": false,
-    "adminQueries": false,
-    "triggers": {},
-    "hostedUI": false,
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "useEnabledMfas": true,
-    "authRoleArn": {
-      "Fn::GetAtt": [
-        "AuthRole",
-        "Arn"
-      ]
-    },
-    "unauthRoleArn": {
-      "Fn::GetAtt": [
-        "UnauthRole",
-        "Arn"
-      ]
-    },
-    "breakCircularDependency": true,
-    "dependsOn": [],
-    "authProviders": [],
-    "parentStack": {
-      "Ref": "AWS::StackId"
-    },
-    "permissions": [],
-    "thirdPartyAuth": false
+    "useEnabledMfas": true
   }
 }
