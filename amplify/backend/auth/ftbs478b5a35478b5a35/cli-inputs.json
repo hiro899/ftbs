@@ -1,6 +1,8 @@
 {
   "version": "1",
   "cognitoConfig": {
+    "identityPoolName": "ftbsdfafc624_identitypool_dfafc624",
+    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "ftbs478b5a35",
     "userPoolName": "ftbs478b5a35_userpool_478b5a35",
     "autoVerifiedAttributes": [
@@ -14,7 +16,7 @@
     "smsVerificationMessage": "Your verification code is {####}",
     "emailVerificationSubject": "Your verification code",
     "emailVerificationMessage": "Your verification code is {####}",
-    "defaultPasswordPolicy": false,
+    "defaultPasswordPolicy": true,
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
@@ -30,11 +32,11 @@
       "email"
     ],
     "userpoolClientLambdaRole": "ftbs47478b5a35_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": false,
+    "userpoolClientSetAttributes": true,
     "sharedId": "478b5a35",
     "resourceName": "ftbs478b5a35478b5a35",
-    "authSelections": "userPoolOnly",
-    "useDefault": "default",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "manual",
     "usernameAttributes": [
       "email"
     ],
@@ -64,6 +66,7 @@
     "parentStack": {
       "Ref": "AWS::StackId"
     },
-    "permissions": []
+    "permissions": [],
+    "thirdPartyAuth": false
   }
 }
