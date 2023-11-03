@@ -30,6 +30,27 @@ function HomePage () {
             Order Sheets
           </a>
         </Link>
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLScI9wUcWgwo-cH5UcmcSUTGeCerEqm30yIykRDWNpXOSJQuxA/viewform">
+          <a
+            className="w-64 text-center block px-10 py-3 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
+          >
+            Order Form
+          </a>
+        </Link>
+        <Link href="https://docs.google.com/forms/d/1u0deLkB3tYzhXu5TM-Xy-8PitHQ1SyPTXTBRyk0lE6Q/viewform?edit_requested=true">
+          <a
+            className="w-64 text-center block px-10 py-3 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
+          >
+            Terms Confirmation
+          </a>
+        </Link>
+        <Link href="https://docs.google.com/forms/d/1_Yw-0_qZ5X9UDXlW8AtdnxO0qXDzZZeosW6sAqWYas4/viewform?edit_requested=true">
+          <a
+            className="w-64 text-center block px-10 py-3 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
+          >
+            Contact Us
+          </a>
+        </Link>
         <button 
           onClick={handleLogout} 
           className="text-[#775541] border border-[#775541] hover:text-white hover:bg-[#59382D] transition-colors duration-200 px-3 py-2 rounded"
