@@ -41,7 +41,7 @@ function HomePage () {
           <a
             className="w-64 text-center block px-10 py-3 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
           >
-            仕入条件確認
+            卸条件確認
           </a>
         </Link>
         <Link href="https://docs.google.com/forms/d/1_Yw-0_qZ5X9UDXlW8AtdnxO0qXDzZZeosW6sAqWYas4/viewform?edit_requested=true">
@@ -55,7 +55,7 @@ function HomePage () {
           <a
             className="w-64 text-center block px-10 py-3 text-white rounded transition-colors duration-200 bg-[#775541] hover:bg-[#59382D]"
           >
-            サイトの使い方
+            卸サイトの使い方
           </a>
         </Link>
         <button 
